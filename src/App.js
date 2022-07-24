@@ -11,7 +11,7 @@ function App() {
         <main>
           <h3> What do You have to do today? 📝 </h3>
           <CreateItem handleInput={ actions.handleInput } saveItem={ actions.onSaveItem } inputValue={ inputValue } />
-          <ListItem />
+          <ListItem items={ state.items } removeItem={ actions.onRemoveItem } completeItem={ actions.onCompleteItem }/>
         </main>
         <footer>
           <span>Elvin D. Guzman</span>
