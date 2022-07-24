@@ -18,6 +18,7 @@ export const ListItem = ({ items, removeItem, completeItem }) => {
                     <button
                         onClick={() => removeItem(e.id)}
                     >
+                        <i className="fa-solid fa-trash-can"></i>
                         {' Delete'}
                     </button>
                 </div>

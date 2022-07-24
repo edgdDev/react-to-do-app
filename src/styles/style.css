@@ -1,0 +1,97 @@
+body {
+    background-color: #7c74eb;
+    font-family: Sans-serif, serif;
+    color: white;
+    margin: 0px;
+}
+
+.main {
+    padding: 40px;
+    text-align: center;
+}
+
+.border {
+    border: 1px solid white;
+}
+
+.container-create-item input {
+    padding: 10px;
+    background-color:  #4e499cce;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    width: 50%;
+}
+
+.container-create-item input:focus {
+    outline: none;
+}
+
+.container-create-item button {
+    padding: 10px 15px 10px 15px;
+    margin-left: 5px;
+    background-color: #4e499cce;
+    border-radius:5px;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.container-create-item button:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.container-list-item{
+    color: black;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;    
+    flex-wrap: wrap;
+    max-height: 42em;
+    overflow: auto;
+}
+
+.content-list-item {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    width: 55%;
+    height: 20px;
+    margin-bottom: 5px;
+    align-items: flex-end;
+    margin-top: 5px;
+    justify-content: space-between;
+}
+
+.content-list-item button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.content-list-item button:hover {
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+}
+
+.task-completed {
+    text-decoration: line-through;
+    background-color: rgb(208, 208, 208);
+}
+
+.footer {
+    text-align: center;
+    padding: 1px; 
+    background-color: rgb(69, 67, 67);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+

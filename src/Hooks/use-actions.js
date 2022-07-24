@@ -1,4 +1,4 @@
-import { useReducer, useState, useEffect } from 'react';
+import { useReducer, useState } from 'react';
 import reducer, { initialState } from "../reducer";
 
 export const useActions = () => {
@@ -65,10 +65,6 @@ export const useActions = () => {
             });
         }
     }
-
-    useEffect(() => {
-        console.log(state);
-    }, [state])
 
     return [{ inputValue, state }, { onSaveItem, handleInput, onRemoveItem, onCompleteItem }];
 
