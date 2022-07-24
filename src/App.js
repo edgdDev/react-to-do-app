@@ -1,12 +1,21 @@
-import { useReducer } from "react";
-import reducer, { initialState } from "./reducer";
+import { useActions } from "./Hooks/use-actions";
+import { CreateItem } from "./Components/CreateItem";
+import { ListItem } from "./Components/ListItem";
+
 
 function App() {
-  const [state, dispatch] = useReducer(reducer, initialState);
+  const [{ inputValue, state }, actions] = useActions();
 
   return (
     <div className="App">
-        <h1>Prueba</h1>
+        <main>
+          <h3> What do You have to do today? 📝 </h3>
+          <CreateItem handleInput={ actions.handleInput } saveItem={ actions.onSaveItem } inputValue={ inputValue } />
+          <ListItem />
+        </main>
+        <footer>
+          <span>Elvin D. Guzman</span>
+        </footer>
     </div>
   );
 }
